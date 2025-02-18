@@ -1,0 +1,4 @@
+*.mp4
+processed-frames
+ffmpeg-framedata
+build
