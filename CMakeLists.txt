@@ -12,11 +12,11 @@ find_package(OpenCV REQUIRED)
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 # Create the executable
-add_executable(my_project src/main.cpp)
+add_executable(asciiGen src/main.cpp)
 
 # Link OpenCV libraries
-target_compile_features(my_project PRIVATE cxx_std_17)
-target_link_libraries(my_project PRIVATE ${OpenCV_LIBS})
+target_compile_features(asciiGen PRIVATE cxx_std_17)
+target_link_libraries(asciiGen PRIVATE ${OpenCV_LIBS})
 
 # Print OpenCV include and library paths for debugging
 message(STATUS "OpenCV Include Directories: ${OpenCV_INCLUDE_DIRS}")

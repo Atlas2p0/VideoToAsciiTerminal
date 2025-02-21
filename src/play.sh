@@ -14,6 +14,7 @@ display_frame() {
 
 frameNumber=1
 
+clear
 
 for i in $(seq 1 $numberOfFrames); do
     frame_file="$directory/ascii_frame_$frameNumber.txt"

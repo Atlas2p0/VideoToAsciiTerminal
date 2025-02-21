@@ -13,12 +13,12 @@ cmake -S "$CMAKE_LISTS_DIR" -B "$BUILD_DIR"
 
 make --directory="$BUILD_DIR"
 
-cd "$BUILD_DIR"
 
-./my_project
+cd "$BUILD_DIR" 
 
-cd "$cwd"
+./asciiGen
 
 clear
 
+cd "$cwd" 
 ./play.sh

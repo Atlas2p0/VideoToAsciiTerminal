@@ -59,5 +59,5 @@ rm -rf "$FFMPEG_FRAMES_DIR/"*
 
 echo "Transforming input video to greyscale frames...."
 
-ffmpeg -i $1 -vf "eq=contrast=1.2:brightness=0.001,unsharp=5:5:1.0:5:5:0.0,scale=1280:960,fps=60,format=gray" $FFMPEG_FRAMES_DIR/frame_%d.png
+ffmpeg -threads 4 -i $1 -vf "scale=1400:1050,unsharp=5:5:1.0:5:5:0.0,eq=contrast=1.3:brightness=0.005,fps=60,format=gray" $FFMPEG_FRAMES_DIR/frame_%d.png
 
